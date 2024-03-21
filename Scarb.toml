@@ -1,0 +1,41 @@
+[package]
+name = "my_snforge_boilerplate"
+version = "0.1.0"
+edition = "2023_11"
+
+# Edition / Preludes:
+# Currently using latest edition ("2023_11"), which was released along with cairo v2.5.0.
+# Learn more here -> https://community.starknet.io/t/cairo-v2-4-0-is-out/109275#editions-and-the-introduction-of-preludes-10
+# and there -> https://community.starknet.io/t/cairo-v2-5-0-is-out/112807#the-pub-keyword-9
+#
+# Check every Cairo release here -> https://github.com/starkware-libs/cairo/releases
+
+
+
+[dependencies]
+starknet = "2.6.3"
+
+# openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.10.0" }
+
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.19.0" }
+# (currently not using latest edition ("v0.20.0"), because running `snforge test` triggers a warning:
+# "[WARNING] Package snforge_std version does not meet the recommended version requirement =0.19.0, it might result in unexpected behaviour")
+
+
+
+[[target.starknet-contract]]
+# sn forge requires CASM code generation, which is disabled by default:
+casm = true
+
+# Sierra contract class generation (required to declare contracts) is enabled by default.
+# Switch to false below to disable it:
+# sierra=false
+
+
+
+[scripts]
+test = "snforge test"
+
+
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
