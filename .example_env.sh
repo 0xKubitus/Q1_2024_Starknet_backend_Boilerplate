@@ -22,9 +22,6 @@ RPC_URL=https://starknet-mainnet.public.blastapi.io
     https://free-rpc.nethermind.io/sepolia-juno
     https://starknet-sepolia.public.blastapi.io
 
-    ### Goerli Testnet (to be discontinued soon)
-    https://starknet-testnet.public.blastapi.io
-    https://free-rpc.nethermind.io/goerli-juno
 
     ### ???
     https://rpc.starknet-testnet.lava.build
