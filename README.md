@@ -1,6 +1,10 @@
 # Starknet backend Boilerplate
 
-This boilerplate uses the current latest versions of Cairo (v2.6.3), Scarb (v2.6.4) & Starknet Foundry (v.0.19.0).
+This boilerplate uses the current latest stable versions of Cairo (v2.6.3), Scarb (v2.6.3) & Starknet Foundry (v.0.19.0).
+The OpenZeppelin cairo-contracts dependency v0.11.0 is also included.
+
+While newer versions of sn foundry are available, using them trigger a warning at compilation time.
+Also, OZ cairo-contracts' dependency recommends using Scarb 2.6.3, that's why we're not using 2.6.4 for now.
 
 The project was initialized with [Starknet Foundry](https://github.com/foundry-rs/starknet-foundry) using:
 `snforge init my_snforge_boilerplate` CLI command.

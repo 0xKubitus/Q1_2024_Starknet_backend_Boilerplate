@@ -15,7 +15,7 @@ edition = "2023_11"
 [dependencies]
 starknet = "2.6.3"
 
-# openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.10.0" }
+# openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.11.0" }
 
 snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.19.0" }
 # (currently not using latest edition ("v0.20.0"), because running `snforge test` triggers a warning:
